@@ -15,7 +15,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
-<body>
+<body style="margin: 5rem 20rem">
 <h1 class="text-center">Resume</h1>
 <hr>
 <form method="post">
@@ -46,25 +46,29 @@
 
     <div class="form-group">
         <label for="education">Education</label>
-        <button type="button" class="btn btn-light" id="add-education">+</button>
-        <ul class="list-group" id="education">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Morbi leo risus</li>
-            <li class="list-group-item">Porta ac consectetur ac</li>
-            <li class="list-group-item">Vestibulum at eros</li>
+
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="education" aria-describedby="button-education" placeholder="Korea University" />
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="button-education">+</button>
+            </div>
+        </div>
+
+        <ul class="list-group" id="education-list">
         </ul>
     </div>
 
     <div class="form-group">
         <label for="experience">Experience</label>
-        <button type="button" class="btn btn-light" id="add-experience">+</button>
-        <ul class="list-group" id="experience">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Morbi leo risus</li>
-            <li class="list-group-item">Porta ac consectetur ac</li>
-            <li class="list-group-item">Vestibulum at eros</li>
+
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="experience" aria-describedby="button-experience" placeholder="Korea University" />
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="button-experience">+</button>
+            </div>
+        </div>
+
+        <ul class="list-group" id="experience-list">
         </ul>
     </div>
 
@@ -73,8 +77,10 @@
         <input class="form-control" type="text" id="skills"/>
     </div>
 
-    <button type="reset" class="btn btn-primary">Reset</button>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="reset" class="btn btn-primary" id="reset">Reset</button>
+    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
 </form>
+
+<script src="index.js"></script>
 </body>
 </html>
